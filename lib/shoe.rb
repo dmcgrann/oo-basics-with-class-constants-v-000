@@ -6,7 +6,7 @@ class Shoe
 
   def initialize(brand)
     @brand = brand
-    BRANDS << brand == :condition(unique)
+    BRANDS << brand
   end
 
 
