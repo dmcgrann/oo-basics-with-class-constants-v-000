@@ -6,13 +6,9 @@ class Shoe
 
   def initialize(brand)
     @brand = brand
-    BRANDS << brand
+    BRANDS << brand == :condition(unique)
   end
 
-  def unique(brand)
-    brand.include?(self.condition = "unique")
-    BRANDS << brand
-  end
 
   def cobble
     self.condition = "new"
