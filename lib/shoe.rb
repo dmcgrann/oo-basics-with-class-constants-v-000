@@ -6,13 +6,7 @@ class Shoe
 
   def initialize(brand)
     @brand = brand
-    BRANDS << brand
-  end
-
-  def condition=(condition)
-    @condition = condition
-    self.condition = "unique"
-    BRANDS << brand
+    BRANDS << brand unless brand.include?(brand)
   end
 
 
