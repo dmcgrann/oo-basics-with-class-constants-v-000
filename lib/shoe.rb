@@ -7,10 +7,6 @@ class Shoe
   def initialize(brand)
     @brand = brand
     BRANDS << brand
-    @brand.each do |k, v|
-      @condition[k] = v
-    end
-    BRANDS
   end
 
 
