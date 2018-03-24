@@ -7,6 +7,10 @@ class Shoe
   def initialize(brand)
     @brand = brand
     BRANDS << brand
+    @brand.each_pair do |k, v|
+      @condition[k] = v
+    end
+    BRANDS
   end
 
 
