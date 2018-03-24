@@ -6,7 +6,6 @@ class Shoe
 
   def initialize(brand)
     @brand = brand
-    self.condition = "unique"
     BRANDS << brand
   end
 
